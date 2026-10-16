@@ -1,0 +1,85 @@
+{
+  "scope": "Corrected single-realisation Burgers-VG spectral-loss experiment",
+  "changes": [
+    "Package-relative imports replace legacy sys.path edits.",
+    "Random-subgrid trainer docstring no longer calls unpublished work published.",
+    "CF comment describes marginal value distributions without claiming phase recovery.",
+    "Numerical and training function bodies are preserved except package imports.",
+    "Historical CSV export uses LF line endings; all CSV rows and values are unchanged."
+  ],
+  "files": [
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/config_burgers_vg_2d.py",
+      "source_sha256": "9ac64a6dc62811d6cd38593550c7c439e33e7d97be074adf80c4651a28272a2c",
+      "export": "solverfixed/config_burgers_vg_2d.py",
+      "export_sha256": "9ac64a6dc62811d6cd38593550c7c439e33e7d97be074adf80c4651a28272a2c"
+    },
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/config_pinn_burgers_vg.py",
+      "source_sha256": "eec132330584c78607b68b82933341ab4c3226fca01facf5f40371d4749add30",
+      "export": "solverfixed/config_pinn_burgers_vg.py",
+      "export_sha256": "7fcf3aca6adbcb184f56ab6d6ef1efecaecbf5c96a80f98827a03b8f95cf9c2e"
+    },
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/burgers_vg_solver_2d.py",
+      "source_sha256": "98d6b2f6eb888aa0d607edd5d8df0fad275487d30e2cf0d48afdcf93d94e56dc",
+      "export": "solverfixed/burgers_vg_solver_2d.py",
+      "export_sha256": "87b63beb8bdd506a25e4d47383d3c5900de78dfd3151ebdb9309dba62c35b6aa"
+    },
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/pde_residuals_burgers_vg.py",
+      "source_sha256": "1729ba5c7ccb217ef9895349fc1f498a2a32ee22ab41722081f7d28b02f5e55b",
+      "export": "solverfixed/pde_residuals_burgers_vg.py",
+      "export_sha256": "1729ba5c7ccb217ef9895349fc1f498a2a32ee22ab41722081f7d28b02f5e55b"
+    },
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/trainer_burgers_vg.py",
+      "source_sha256": "8b6395dda80d0e55fffef5344ffc9d1f072c3f36f04bd2d8876127fe910d74e6",
+      "export": "solverfixed/trainer_burgers_vg.py",
+      "export_sha256": "a858e8b6000c9853a13a409244d5f46c43cf3911899c9d204b360cbe2c03f336"
+    },
+    {
+      "source": "active/code/spde/spde-inne/01_burgers_levy/trainer_burgers_vg_randsub.py",
+      "source_sha256": "8b36e07b825dd6f3cdea451ef6eba9fef90882d380b3718761f7312f177a04f7",
+      "export": "solverfixed/trainer_burgers_vg_randsub.py",
+      "export_sha256": "9f0f38942945470c1965e077c4308a142752770d661781a1ef946b47421df1b1"
+    },
+    {
+      "source": "active/code/spde/spde-inne/shared/pinn_models.py",
+      "source_sha256": "109c5edd91885b51514aedd9ae526201481884e0683420cfc0e7b98df742d816",
+      "export": "solverfixed/pinn_models.py",
+      "export_sha256": "109c5edd91885b51514aedd9ae526201481884e0683420cfc0e7b98df742d816"
+    },
+    {
+      "source": "active/code/spde/spde-inne/shared/noise_interp_3d.py",
+      "source_sha256": "b1d200b624be57eed7eb693b5a0f91cb2080bd8aecde64ab50148863c2a5af2b",
+      "export": "solverfixed/noise_interp_3d.py",
+      "export_sha256": "b1d200b624be57eed7eb693b5a0f91cb2080bd8aecde64ab50148863c2a5af2b"
+    },
+    {
+      "source": "active/code/spde/spde-inne/shared/vg_jumps.py",
+      "source_sha256": "d814eca249772af52f3c20f492497fe1a29eb0a5b5ae7639e40d770f5fea5eb6",
+      "export": "solverfixed/vg_jumps.py",
+      "export_sha256": "d814eca249772af52f3c20f492497fe1a29eb0a5b5ae7639e40d770f5fea5eb6"
+    },
+    {
+      "source": "active/code/spde/spde-inne/shared/trainer_template.py",
+      "source_sha256": "a140a2fbed0648780ad47c920a568edbc72e4efc1fb9a4fb6beecb984d38f9c9",
+      "export": "solverfixed/trainer_template.py",
+      "export_sha256": "a140a2fbed0648780ad47c920a568edbc72e4efc1fb9a4fb6beecb984d38f9c9"
+    },
+    {
+      "source": "active/papers/useful/papers/solverfixed/scripts/evaluate_corrected.py",
+      "source_sha256": "ccaeefddbf9d029850932819aba181cf3092e8e40283b095007e5189a46900ce",
+      "export": "solverfixed/metrics.py",
+      "export_sha256": "27455292ab6cd3b86b2a91e68fb6a21fcf95b77e3e1f4fa8a25463f830bc8525",
+      "extraction": "metrics function only, with torch import"
+    },
+    {
+      "source": "active/papers/useful/papers/solverfixed/results/fresh_matched.csv",
+      "source_sha256": "71c2bce56caa59bc772c8dcda94a2c24f368c4f3f6b5846c4cafd92450fa1222",
+      "export": "paper_results/fresh_matched.csv",
+      "export_sha256": "e7ace0f3f9aeebb98342ddf5f9ada5fb096d9722209db64981da86ac0107e070"
+    }
+  ]
+}
